@@ -1,0 +1,9 @@
+---
+name: NLOGMultiProtocol
+author:  NLOG
+version: 1.0
+api: [3.0.0-ALPHA8]
+main: NLOG\NLOGMultiProtocol\Main
+commands: []
+permissions: []
+...
