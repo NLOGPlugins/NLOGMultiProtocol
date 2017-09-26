@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener {
 		$this->getLogger()->info("MultiProtocol 플러그인 활성화");
 		
 		@mkdir($this->getDataFolder());
-		$this->acceptProtocol = (new Config($this->getDataFolder()."accept.yml", Config::YAML, ["accept-protocol" => ProtocolInfo::CURRENT_PROTOCOL]))->get("accept-protocol");
+		$this->acceptProtocol = (new Config($this->getDataFolder()."accept.yml", Config::YAML, ["accept-protocol" => [ProtocolInfo::CURRENT_PROTOCOL]]))->get("accept-protocol");
 		if (empty($this->acceptProtocol)) {
 			$this->acceptProtocol[ProtocolInfo::CURRENT_PROTOCOL];
 		}
