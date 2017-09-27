@@ -16,7 +16,7 @@ class Main extends PluginBase implements Listener {
 
    public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-	$this->getLogger()->info("MultiProtocol 플러그인 활성화");
+	$this->getLogger()->info("MultiProtocol Plugin Enable!");
 		
 	@mkdir($this->getDataFolder());
 	$this->acceptProtocol = (new Config($this->getDataFolder()."accept.yml", Config::YAML))->get("accept-protocol");
